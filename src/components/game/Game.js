@@ -15,6 +15,7 @@ const Game = () => {
           //   Become a Secret Sender
           // </StartGameButton>
           <StartGameButton
+            // placeholder={`Become a Secret Sender`}
             src={cristmassButton}
             onClick={() => setHasGameStarted(true)}
           />

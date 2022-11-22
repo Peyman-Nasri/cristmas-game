@@ -17,7 +17,7 @@ export const PageTitle = styled.h1`
   font-size: 3em;
 `
 
-// export const StartGameButton = styled.div`
+// export const GetRandomUserButton = styled.div`
 //   background-color: #ff4400;
 //   color: white;
 //   border-radius: 10px;
