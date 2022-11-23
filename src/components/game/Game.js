@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import VotePage from './VotePage'
-import { Container, PageTitle, StartGameButton } from './game_styles'
+import { Container, CristmasButton, PageTitle, StartGameImage, Title } from './game_styles'
 import cristmassButton from '../../assets/images/cristmassButton.webp'
+import Snow from 'react-snowfall'
 
 const Game = () => {
   const [hasGameStarted, setHasGameStarted] = useState(false)
@@ -11,18 +12,19 @@ const Game = () => {
       <Container color="red">
         <PageTitle color="white">Welcome to Soltia</PageTitle>
         {!hasGameStarted ? (
-          // <StartGameButton onClick={() => setHasGameStarted(true)}>
-          //   Become a Secret Sender
-          // </StartGameButton>
-          <StartGameButton
-            // placeholder={`Become a Secret Sender`}
+          <CristmasButton>
+            <Title>Become a Secret Sender</Title>
+            <StartGameImage
             src={cristmassButton}
             onClick={() => setHasGameStarted(true)}
-          />
+            />
+          </CristmasButton>
         ) : (
           <VotePage />
         )}
       </Container>
+
+      <Snow />
     </>
   )
 }

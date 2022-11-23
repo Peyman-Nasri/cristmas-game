@@ -29,8 +29,6 @@ const VotePage = () => {
 
     setGiftReceiver(randomUser.name)
     setIsDisabled(true)
-
-    // if (userName !== giftReceiver)
   }
 
   return (
@@ -38,14 +36,14 @@ const VotePage = () => {
       <h2>
         Welcome{' '}
         <strong>
-          <i>{userName}</i>
+          <i>'{userName}'</i>
         </strong>
       </h2>
-      <button onClick={getRandomUser} disabled={isDisabled}>
+      <button onClick={getRandomUser} hidden={isDisabled}>
         Draw Name
       </button>
       <h3>You are a secret sender for</h3>
-      <p>{giftReceiver}</p>
+      <h2> {giftReceiver}</h2>
     </div>
   )
 }
