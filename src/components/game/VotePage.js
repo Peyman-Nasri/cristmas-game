@@ -1,5 +1,7 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
+import { Button, Name, VotePageImage } from './game_styles'
+
 
 const VotePage = () => {
   const [giftReceiver, setGiftReceiver] = useState('')
@@ -32,19 +34,19 @@ const VotePage = () => {
   }
 
   return (
-    <div>
-      <h2>
+    <VotePageImage>
+      <Name>
         Welcome{' '}
         <strong>
-          <i>'{userName}'</i>
+          <i>{userName}</i>
         </strong>
-      </h2>
-      <button onClick={getRandomUser} hidden={isDisabled}>
+      </Name>
+      <h3>You are a secret sender for</h3>ّ
+      <Button onClick={getRandomUser} hidden={isDisabled}>
         Draw Name
-      </button>
-      <h3>You are a secret sender for</h3>
-      <h2> {giftReceiver}</h2>
-    </div>
+      </Button>
+      <h3>{giftReceiver}</h3>
+    </VotePageImage>
   )
 }
 

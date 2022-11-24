@@ -9,11 +9,11 @@ const Game = () => {
 
   return (
     <>
-      <Container color="red">
-        <PageTitle color="white">Welcome to Soltia</PageTitle>
+      <Container>
+        <PageTitle color="#e19c47">Welcome to Soltia</PageTitle>
         {!hasGameStarted ? (
           <CristmasButton>
-            <Title>Become a Secret Sender</Title>
+            <Title>Become a secret sender</Title>
             <StartGameImage
             src={cristmassButton}
             onClick={() => setHasGameStarted(true)}
