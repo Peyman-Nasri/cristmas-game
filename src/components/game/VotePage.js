@@ -41,11 +41,10 @@ const VotePage = () => {
           <i>{userName}</i>
         </strong>
       </Name>
-      <h3>You are a secret sender for</h3>ّ
-      <Button onClick={getRandomUser} hidden={isDisabled}>
-        Draw Name
-      </Button>
-      <h3>{giftReceiver}</h3>
+      <h3>You are a secret sender for {giftReceiver}</h3>ّ
+       {!isDisabled && <Button onClick={getRandomUser}>Draw Name</Button>}
+        
+      
     </VotePageImage>
   )
 }
