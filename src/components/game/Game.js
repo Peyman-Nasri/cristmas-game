@@ -12,8 +12,9 @@ const Game = () => {
     <>
       <PlaySound />
       <Container>
-        <PageTitle color="#e19c47">Welcome to Soltia</PageTitle>
         {!hasGameStarted ? (
+          <>
+          <PageTitle color="#e19c47">Welcome to Soltia</PageTitle>
           <ChristmasButton>
             <Title>Become a secret sender</Title>
             <StartGameImage
@@ -21,6 +22,7 @@ const Game = () => {
             onClick={() => setHasGameStarted(true)}
             />
           </ChristmasButton>
+          </>
         ) : (
           <VotePage />
         )}

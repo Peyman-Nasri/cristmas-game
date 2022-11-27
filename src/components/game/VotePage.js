@@ -43,7 +43,7 @@ const VotePage = () => {
   return (
     <VotePageImage>
       <Name>
-        Hello{' '}
+        Welcome{' '}
         <strong>
           <i>{userName}!</i>
         </strong>
