@@ -24,7 +24,7 @@ export const StartGameImage = styled.img`
   cursor: pointer;
 `
 
-export const CristmasButton = styled.div`
+export const ChristmasButton = styled.div`
   position: relative;
   text-align: center;
   transition: all ease-in-out 0.2s;
@@ -48,6 +48,29 @@ export const VotePageImage = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   color: #e19c47
+`
+
+export const ChristmasGift = styled.div`
+  position: relative;
+  text-align: center;
+  transition: all ease-in-out 0.2s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+`
+
+export const GiftImage = styled.img`
+  width: 25em;
+`
+
+export const GiftReceiver = styled.h2`
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  color: #e19c47;
 `
 
 export const Button = styled.button`
@@ -103,7 +126,7 @@ export const Name = styled.h2`
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 15px;
-  background-color: #9e1d0c;
+  background-color: #cb1134;
   color: #e19c47;
   padding: 10px;
 `

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import VotePage from './VotePage'
-import { Container, CristmasButton, PageTitle, StartGameImage, Title } from './game_styles'
-import cristmassButton from '../../assets/images/cristmassButton.webp'
+import { ChristmasButton, Container, PageTitle, StartGameImage, Title } from './game_styles'
+import christmassButton from '../../assets/images/christmassButton.webp'
 import Snow from 'react-snowfall'
 import PlaySound from './PlaySound'
 
@@ -14,13 +14,13 @@ const Game = () => {
       <Container>
         <PageTitle color="#e19c47">Welcome to Soltia</PageTitle>
         {!hasGameStarted ? (
-          <CristmasButton>
+          <ChristmasButton>
             <Title>Become a secret sender</Title>
             <StartGameImage
-            src={cristmassButton}
+            src={christmassButton}
             onClick={() => setHasGameStarted(true)}
             />
-          </CristmasButton>
+          </ChristmasButton>
         ) : (
           <VotePage />
         )}
