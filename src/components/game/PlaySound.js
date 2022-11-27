@@ -6,7 +6,6 @@ const PlaySound = () => {
 
   const handleClick = () => {
     playSound()
-    // maybe you want to add other things here?
   }
 
   return <button onClick={() => handleClick()}>Play Sound</button>
