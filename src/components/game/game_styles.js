@@ -9,6 +9,7 @@ export const Container = styled.div`
   margin: auto;
   height: 100vh;
   /* background-color: ${({ color }) => color}; */
+  text-align: center;
 `
 
 export const PageTitle = styled.h1`
@@ -16,7 +17,8 @@ export const PageTitle = styled.h1`
   font-size: 3em;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   border-radius: 16px;
-  padding: 20px
+  padding: 20px;
+  text-shadow: 3px 4px 7px rgba(81,67,21,0.8);
 `
 
 export const StartGameImage = styled.img`
@@ -40,33 +42,40 @@ export const Title = styled.h2`
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  color: #e19c47;
+  color: #fceccc;
   cursor: pointer;
+  text-shadow: 3px 4px 7px rgba(81,67,21,0.8);
 `
 
 export const VotePageImage = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
-  color: #e19c47
+  color: #d8d8d8;
 `
 
 export const ChristmasGift = styled.div`
   position: relative;
   text-align: center;
   transition: all ease-in-out 0.2s;
+  margin-top: 1em;
+  
 `
 
 export const GiftImage = styled.img`
   width: 25em;
+  border-radius: 30px;
 `
 
-export const GiftReceiver = styled.h2`
+export const GiftReceiver = styled.p`
   position: absolute;
   top: 30%;
-  left: 40%;
+  left: 35%;
   transform: translate(-50%, -50%);
   width: 100%;
-  color: #e19c47;
+  color: #f1cd29;
+  text-shadow: 3px 4px 7px rgba(81,67,21,0.8);
+  font-size: 1.5em;
+  max-width: 10em;
 `
 
 export const Button = styled.button`
@@ -81,7 +90,7 @@ export const Button = styled.button`
   font-size: 16px;
   line-height: 0.3px;
   text-decoration: none;
-  color: #e19c47;
+  color: #e2e2e2;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.75);
   background: #8e1d0c;
   outline: none;
@@ -121,8 +130,15 @@ export const Button = styled.button`
 export const Name = styled.h2`
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  border-radius: 15px;
+  border-radius: 30px;
   background-color: #cb1134;
-  color: #e19c47;
-  padding: 10px;
+  color: #e6e6e6;
+  padding: 2em;
+  
+
+  strong {
+    margin-left: 0.5em;
+    color: #f1cd29;
+    text-shadow: 3px 4px 7px rgba(81,67,21,0.8);
+  }
 `
