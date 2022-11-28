@@ -58,7 +58,6 @@ export const ChristmasGift = styled.div`
   text-align: center;
   transition: all ease-in-out 0.2s;
   margin-top: 1em;
-  
 `
 
 export const GiftImage = styled.img`
