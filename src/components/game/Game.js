@@ -14,7 +14,7 @@ import jingleBells from '../../assets/sounds/Jingle Bells.mp3'
 
 const Game = () => {
   const [hasGameStarted, setHasGameStarted] = useState(false)
-  const [playSound, { stop }] = useSound(jingleBells, { volume: 0.7 })
+  const [playSound] = useSound(jingleBells, { volume: 0.7 })
 
   return (
     <>
@@ -25,7 +25,7 @@ const Game = () => {
 
             <ChristmasButton
               onClick={() => {
-                // playSound()
+                playSound()
                 setHasGameStarted(true)
               }}
             >
@@ -41,8 +41,8 @@ const Game = () => {
       <Snow
         snowflakeCount={600}
         radius={[0.5, 3.5]}
-        speed={[2, 8]}
-        wind={[1.5, 5.5]}
+        speed={[2, 4]}
+        wind={[1.5, 4]}
       />
     </>
   )
