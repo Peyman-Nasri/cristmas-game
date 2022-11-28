@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import useSound from 'use-sound'
 import JingleBells from '../../assets/sounds/Jingle Bells.mp3'
 
@@ -7,6 +8,10 @@ const PlaySound = () => {
   const handleClick = () => {
     playSound()
   }
+
+  useEffect(() => {
+    playSound()
+  },[])
 
   return <button onClick={() => handleClick()}>Play Sound</button>
 }

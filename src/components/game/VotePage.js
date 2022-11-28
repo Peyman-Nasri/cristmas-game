@@ -23,7 +23,7 @@ const VotePage = () => {
 
       const user = users[Math.floor(Math.random() * users.length)]
 
-      setUserName(user.name)
+      setUserName(user)
     }
 
     getUserName()
@@ -33,8 +33,9 @@ const VotePage = () => {
     const { data: users } = await axios.get(
       'https://jsonplaceholder.typicode.com/users'
     )
-
-    const randomUser = users[Math.floor(Math.random() * users.length)]
+    
+    const otherUsers = users.filter((user) => user.id !== userName.id)
+    const randomUser = otherUsers[Math.floor(Math.random() * otherUsers.length)]
 
     setGiftReceiver(randomUser.name)
     setIsDisabled(true)
@@ -45,7 +46,7 @@ const VotePage = () => {
       <Name>
         Welcome{' '}
         <strong>
-          <i>{userName}!</i>
+          <i>{userName.name}!</i>
         </strong>
       </Name>
 
@@ -62,6 +63,7 @@ const VotePage = () => {
       </h3>
 
       {!isDisabled && <Button onClick={getRandomUser}>Draw Name</Button>}
+
 
     </VotePageImage>
   )

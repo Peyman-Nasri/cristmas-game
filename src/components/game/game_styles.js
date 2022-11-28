@@ -54,10 +54,6 @@ export const ChristmasGift = styled.div`
   position: relative;
   text-align: center;
   transition: all ease-in-out 0.2s;
-
-  &:hover {
-    transform: scale(1.05);
-  }
 `
 
 export const GiftImage = styled.img`
